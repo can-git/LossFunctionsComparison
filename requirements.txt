@@ -1,8 +1,9 @@
-torchvision
-tqdm
-numpy
+torchvision~=0.15.1
+tqdm~=4.65.0
+numpy~=1.24.3
 pandas
-matplotlib
-scikit-learn
+matplotlib~=3.7.1
+scikit-learn~=1.2.2
 seaborn
 pillow
+torch~=2.0.0

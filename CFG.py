@@ -1,0 +1,13 @@
+NUM_CLASSES = 3
+BATCH_SIZE = 32
+NUM_WORKERS = 16
+EPOCH = 50
+LR = 0.00009
+WD = 0.005
+GAMMA = 0.9
+SIZE = 250
+NAME = "SGD"
+WEIGHTS = "Results/{}/epoch_last_model.pt".format(NAME)
+TRAIN_PATH = "Data/train"
+VAL_PATH = "Data/val"
+TEST_PATH = "Data/test"

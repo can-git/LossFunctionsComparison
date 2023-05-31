@@ -6,8 +6,9 @@ class ImageDataset(Dataset):
     def __init__(self,data_path):
         self.data = datasets.ImageFolder(data_path)
         self.transform = transforms.Compose([
-            transforms.Resize((224, 224)),
             transforms.RandomHorizontalFlip(),
+            transforms.RandomVerticalFlip(),
+            transforms.RandomRotation(degrees=45),
             transforms.ToTensor(),
             transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 
